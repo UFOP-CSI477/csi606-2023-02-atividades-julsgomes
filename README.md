@@ -3,12 +3,14 @@
 
 ## Atualize os seus dados
 
-- Nome:
-- Matrícula:
-- Curso:
-- Semestre/Ano correntes:
-- Link para o seu GitHub:
+- Nome: Julia Gomes
+- Matrícula: 20.2.8165
+- Curso: Sistemas de Informação
+- Semestre/Ano correntes: 23.2
+- Link para o seu GitHub: https://github.com/julsgomes
 
 ## [Projeto final:](./Projeto/README.md)
 
-Apresente uma breve descrição do seu projeto.
+Apresente uma breve descrição do seu projeto:
+Agendamento e Lembretes de Consultas e Tratamentos:
+Desenvolver uma aplicação que ajude os pacientes a agendar consultas médicas, exames e lembre-os de tomar medicamentos e seguir os tratamentos prescritos.
