@@ -1,0 +1,242 @@
+GET http://localhost:5000/estados
+
+###
+
+POST http://localhost:5000/estados
+Content-Type: application/json
+
+{
+
+    "nome": "Rio de Janeiro",
+    "sigla": "RJ"
+
+}
+
+###
+
+PUT http://localhost:5000/estados
+Content-Type: application/json
+
+{
+    "id": 3,
+    "nome": "Bahia",
+    "sigla": "BA"
+
+}
+
+###
+
+DELETE http://localhost:5000/estados
+Content-Type: application/json
+
+{
+    "id": 4
+}
+
+
+// CIDADES
+
+###
+
+POST http://localhost:5000/cidades
+Content-Type: application/json
+
+{
+    "nome": "João Monlevade",
+    "estado_id": 2
+}
+
+###
+
+GET http://localhost:5000/cidades
+
+
+###
+
+PUT http://localhost:5000/cidades
+Content-Type: application/json
+
+{
+    "id": 4,
+    "nome": "Cidade atualizada",
+    "estado_id": 1
+}
+
+###
+
+DELETE http://localhost:5000/cidades
+Content-Type: application/json
+
+{
+    "id": 4
+}
+
+// LOCAIS
+
+###
+GET http://localhost:5000/locais
+
+###
+
+POST http://localhost:5000/locais
+Content-Type: application/json
+
+{
+    "nome": "teste",
+    "rua": "rua teste",
+    "numero": "12221231",
+    "complemento": "apartamento",
+    "cidade_id": 2
+}
+
+###
+
+PUT http://localhost:5000/locais
+Content-Type: application/json
+
+{
+    "id": 1,
+    "nome": "Local de coleta atualizado",
+    "rua": "Castelo branco",
+    "numero": "456",
+    "complemento": "casa",
+    "cidade_id": 1
+}
+
+###
+
+DELETE http://localhost:5000/locais
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+
+// DOAÇÃO
+
+###
+GET http://localhost:5000/doacoes
+
+###
+
+POST http://localhost:5000/doacoes
+Content-Type: application/json
+
+{
+    "pessoa_id": 1,
+    "local_id": 2,
+    "data": "2021-05-20T00:00:00.000Z"
+}
+
+###
+
+PUT http://localhost:5000/doacoes
+Content-Type: application/json
+
+{
+    "id": 3,
+    "pessoa_id": 1,
+    "local_id": 2,
+    "data": "2021-05-20T00:00:00.000Z"
+}
+
+###
+
+DELETE http://localhost:5000/doacoes
+Content-Type: application/json
+
+{
+    "id": 3
+}
+
+###
+
+DELETE http://localhost:5000/doacoes
+Content-Type: application/json
+
+{
+    "id": 3
+}
+
+// PESSOA
+
+###
+
+GET http://localhost:5000/pessoas
+
+###
+
+POST http://localhost:5000/pessoas
+Content-Type: application/json
+
+{
+    "nome": "Ana Maria",
+    "rua": "rua teste",
+    "numero": "322",
+    "complemento": "casa",
+    "rg": "25237672",
+    "cidade_id": 1,
+    "tipo_id": 1
+}
+
+###
+
+PUT http://localhost:5000/pessoas
+Content-Type: application/json
+
+{
+    "id": 2,
+    "nome": "Júlia",
+    "rua": "José da Silva",
+    "numero": "241",
+    "complemento": "casa",
+    "rg": "25236772",
+    "cidade_id": 1,
+    "tipo_id": 1
+}
+
+###
+
+DELETE http://localhost:5000/pessoas
+Content-Type: application/json
+
+{
+    "id": 3
+}
+
+// TIPO SANGUINEO
+
+###
+
+GET http://localhost:5000/tipos
+
+###
+
+POST http://localhost:5000/tipos
+Content-Type: application/json
+
+{
+    "tipo": "A",
+    "fator": "negativo"
+}
+
+###
+
+PUT http://localhost:5000/tipos
+Content-Type: application/json
+
+{
+    "id": 2,
+    "tipo": "B",
+    "fator": "positivo"
+}
+
+###
+
+DELETE http://localhost:5000/tipos
+Content-Type: application/json
+
+{
+    "id": 2
+}
