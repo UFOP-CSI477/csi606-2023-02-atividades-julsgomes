@@ -1,29 +1,38 @@
-# **CSI606-2021-02 - Remoto - Trabalho Final - Resultados**
+# TECHBLOG
 
-## *Aluna(o): Princesa Leia (Luke Skywalker)*
+Este projeto consiste na criação um site do tipo blog voltado para a criação e publicação de posts, sendo desenvolvido com propósitos acadêmicos, visando a aplicação dos conhecimentos sobre banco de dados NoSQL.
 
---------------
+ ## How to run
+1. **Instalar o servidor MongoDB e o Python:**
+   - Certifique-se de ter o servidor MongoDB instalado em sua máquina. Você pode baixá-lo no [site oficial do MongoDB](https://www.mongodb.com/try/download/community).
+   - Instale o Python se ainda não estiver instalado. Você pode baixá-lo em [python.org](https://www.python.org/downloads/).
 
-<!-- Este documento tem como objetivo apresentar o projeto desenvolvido, considerando o que foi definido na proposta e o produto final. -->
+2. **Instalar as dependências:**
+   - Abra o terminal ou prompt de comando.
+   - Navegue até o diretório do projeto onde está localizado o arquivo `requirements.txt`.
+   - Execute o seguinte comando para instalar as dependências:
 
-### Resumo
+     ```bash
+     pip install -r requirements.txt
+     ```
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+3. **Alterar informações sobre o banco de dados em app.py:**
+   - Abra o arquivo `app.py` no seu editor de texto ou IDE.
+   - Vá para a linha 11 e substitua `'mongodb://localhost:27017/'` pela sua URI do MongoDB, se necessário. Mantenha o nome do BD ('blog') após a URI. Por exemplo:
+     
+     ```bash
+     app.config['MONGO_URI'] = 'mongodb://localhost:27017/blog'
+     ```
 
-### 1. Funcionalidades implementadas
-<!-- Descrever as funcionalidades que eram previstas e foram implementas. -->
-  
-### 2. Funcionalidades previstas e não implementadas
-<!-- Descrever as funcionalidades que eram previstas e não foram implementas, apresentando uma breve justificativa do porquê elas não foram incluídas -->
+4. **Executar a aplicação:**
+   - No diretório do projeto onde está localizado o arquivo `app.py`, execute o seguinte comando no terminal ou prompt de comando:
 
-### 3. Outras funcionalidades implementadas
-<!-- Descrever as funcionalidades implementas além daquelas que foram previstas, caso se aplique.  -->
+     ```bash
+     python app.py
+     ```
 
-### 4. Principais desafios e dificuldades
-<!-- Descrever os principais desafios encontrados no desenvolvimento do trabalho, quais foram as dificuldades e como elas foram superadas e resolvidas. -->
+   Isso iniciará o servidor Flask.
 
-### 5. Instruções para instalação e execução
-<!-- Descrever o que deve ser feito para instalar (ou baixar) a aplicação, o que precisa ser configurando (parâmetros, banco de dados e afins) e como executá-la. -->
-
-### 6. Referências
-<!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
+5. **Acessar o site:**
+   - Abra um navegador web.
+   - Vá para [http://127.0.0.1:5000/](http://127.0.0.1:5000/) para acessar o site.
