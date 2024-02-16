@@ -1,35 +1,43 @@
-# **CSI606-2021-02 - Remoto - Proposta de Trabalho Final**
+CSI606-2021-02 - Remoto - Proposta de Trabalho Final
 
-## *Aluna(o): Princesa Leia (Luke Skywalker)*
+Aluna(o): Júlia Roberta Gomes Miguel
 
 --------------
 
 <!-- Descrever um resumo sobre o trabalho. -->
 
-### Resumo
+TECHBLOG
+Este projeto consiste na criação um site do tipo blog voltado para a criação e publicação de posts, sendo desenvolvido com propósitos acadêmicos, visando a aplicação dos conhecimentos sobre banco de dados NoSQL.
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+How to run
+Instalar o servidor MongoDB e o Python:
 
-<!-- Apresentar o tema. -->
-### 1. Tema
+Certifique-se de ter o servidor MongoDB instalado em sua máquina. Você pode baixá-lo no site oficial do MongoDB.
+Instale o Python se ainda não estiver instalado. Você pode baixá-lo em python.org.
+Instalar as dependências:
 
-  O trabalho final tem como tema o desenvolvimento de ...
+Abra o terminal ou prompt de comando.
 
-<!-- Descrever e limitar o escopo da aplicação. -->
-### 2. Escopo
+Navegue até o diretório do projeto onde está localizado o arquivo requirements.txt.
 
-  Este projeto terá as seguintes funcionalidades...
+Execute o seguinte comando para instalar as dependências:
 
-<!-- Apresentar restrições de funcionalidades e de escopo. -->
-### 3. Restrições
+pip install -r requirements.txt
+Alterar informações sobre o banco de dados em app.py:
 
-  Neste trabalho não serão considerados ...
+Abra o arquivo app.py no seu editor de texto ou IDE.
 
-<!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
-### 4. Protótipo
+Vá para a linha 11 e substitua 'mongodb://localhost:27017/' pela sua URI do MongoDB, se necessário. Mantenha o nome do BD ('blog') após a URI. Por exemplo:
 
-  Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
+app.config['MONGO_URI'] = 'mongodb://localhost:27017/blog'
+Executar a aplicação:
 
-### 5. Referências
+No diretório do projeto onde está localizado o arquivo app.py, execute o seguinte comando no terminal ou prompt de comando:
 
-  Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT.
+python app.py
+Isso iniciará o servidor Flask.
+
+Acessar o site:
+
+Abra um navegador web.
+Vá para http://127.0.0.1:5000/ para acessar o site.
