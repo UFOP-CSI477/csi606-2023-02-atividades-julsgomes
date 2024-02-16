@@ -11,6 +11,9 @@
 
 ## [Projeto final:](./Projeto/README.md)
 
-Tema alterado para o blog
+Tema antigo:
+- Desenvolver uma aplicação que ajude os pacientes a agendar consultas médicas, exames e lembre-os de tomar medicamentos e seguir os tratamentos prescritos.
 
-Este projeto consiste na criação um site do tipo blog voltado para a criação e publicação de posts, sendo desenvolvido com propósitos acadêmicos, visando a aplicação dos conhecimentos sobre banco de dados NoSQL.
+Tema novo:
+- Criação de um blog
+- Este projeto consiste na criação um site do tipo blog voltado para a criação e publicação de posts, sendo desenvolvido com propósitos acadêmicos, visando a aplicação dos conhecimentos sobre banco de dados NoSQL.
