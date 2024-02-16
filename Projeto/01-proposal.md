@@ -1,5 +1,3 @@
-CSI606-2021-02 - Remoto - Proposta de Trabalho Final
-
 Aluna(o): Júlia Roberta Gomes Miguel
 
 --------------
